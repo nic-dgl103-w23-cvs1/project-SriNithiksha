@@ -1,84 +1,195 @@
 html {
-    display: flex;
-    font-size: 62.5%;
-    padding: 20px;
-    width: auto;
-  }
-  /** header of the page**/
-  header {
-    height: 100px;
-    background: #f2f5f7;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  header ul {
-    display: flex;
-    list-style-type: none;
-  }
-  header ul li a {
-    padding: 0 20px;
-      color: #424b5a;
-      text-decoration: none;
-      display: inline-block;
-      font-family: "Ubuntu", sans-serif;
-      font-size: 1.25rem;
-      font-weight: bold;
-  }
-  .bookappt-btn {
-    padding: 5px;
-    border-radius: 2px;
+  display: flex;
+  font-size: 62.5%;
+  /*padding: 5px;*/
+  /* width: auto;*/
+}
+/** header of the page**/
+header {
+  height: 100px;
+  background: #cc8800;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  list-style-type: none;
+}
+header ul li a {
+  padding: 0 20px;
     color: white;
-    background-color: #424b5a;
-    justify-content: center;
-    align-items: center;
-  }
-/** hero **/
-  .hero {
-    background-image: url(images/bg1.png);
-    background-size: cover;
-    /*padding: 100px;*/
-  }
-  main {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding: 20px;
-    font-family: "Ubuntu", sans-serif;
-  }
-  .welcome {
-    width: 40%
-  }
-  main h1 {
-    font-size: 6rem;
-    font-weight: bold;
-    color: black;
-  }
-  main p {
-    font-size: 2.5rem;
-    font-weight: 100;
-    color: black;
-    margin: 30px 0;
-  }
-  .con {
-    
-    align-items: center;
-    justify-content: center;
-  }
-  .hero .con {
-    padding: 2px;
-    border: 2px solid black;
-    border-radius: 6px;
-    color: black;
-    background-color: gray;
-    justify-content: center;
-    align-items: center;
-  }
-  .welcome a {
-    font-size: 2.1rem;
-    font-weight: bold;
-    color: grey;
-  }
-  .hero .bgimage{
+    text-decoration: none;
     display: inline-block;
-  }
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.50rem;
+    font-weight: bold;
+}
+.bookappt-btn {
+  padding: 3px;
+  border-radius: 2px;
+  color: #cc8800;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+/** hero **/
+.hero {
+  background: fixed;
+  background-color: #986434;
+  background-size: cover;
+  /*padding: 100px;*/
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+.welcome {
+  width: 30%;
+  justify-content: flex-end;
+}
+main h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+main h2 {
+  font-size: 6rem;
+  font-weight: lighter;
+  text-align: center;
+  color: black;
+}
+main p {
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: black;
+  text-align: center;
+  margin: 30px 0;
+}
+.con {
+ 
+  align-items: center;
+  justify-content: center;
+}
+.hero .con {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 3rem;
+  color: #986434;
+  align-content: center;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+.welcome a {
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #986434;
+}
+.bgimage{
+  display: inline-block;
+  justify-content: right;
+  width: 60%;
+}
+/**Intro**/
+.intro{
+  display: block;
+  padding: 20px;
+  height: 36%;
+  background-color: #f2e5d9;
+}
+
+.intro h2{
+  display: block;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.intro p{
+  display: block;
+  font-size: 3rem;
+  text-align: justify;
+  padding: 28px;
+  font-weight: lighter;
+  text-decoration: none;
+
+}
+/** footer **/
+footer{
+  display: block;
+  padding: 20px;
+  background: #111;
+  height: auto;
+  color: #cc8800;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h1{
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+
+/** footer bottom**/
+.footer-bottom{
+    display: block;
+    background: #3b3a37;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-bottom p{
+   float: left;
+   color: #cc8800;
+   font-size: 16px;
+   word-spacing: 2px;
+   text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.footer-menu{
+  float: right;
+}
+
+.footer-menu ul{
+  display: flex;
+}
+
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+
+.footer-menu ul li a{
+  color: #cc8800;
+  font-size: 16px;
+  text-decoration: none;
+}
