@@ -2,7 +2,7 @@ html {
   display: flex;
   font-size: 62.5%;
   /*padding: 5px;*/
-  /* width: auto;*/
+  /*width: auto;*/
 }
 /** header of the page**/
 header {
@@ -35,8 +35,10 @@ header ul li a {
 }
 /** hero **/
 .hero {
-  background: fixed;
-  background-color: #986434;
+  display: block;
+  /*background: fixed;*/
+  background-image: url(images/background.png);
+  /*background-color: #986434;*/
   background-size: cover;
   /*padding: 100px;*/
 }
@@ -192,4 +194,95 @@ display: block;
   color: #cc8800;
   font-size: 16px;
   text-decoration: none;
+}
+
+/*** ABOUT ***/
+.about{
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #754f1a;
+}
+
+.about h2{
+  display: block;
+  text-align: left;
+  padding: 15px;
+  color: #27271F;
+  font-size: 4rem;
+}
+
+.felice{
+  display: block;
+  box-sizing: content-box;
+  background: silver;
+  border-radius: 10px;
+}
+
+.felice img{
+  display: block;
+  align-content: center;
+  width: 30%;
+  height: 15%;
+}
+
+.about h3{
+  display: block;
+  text-align: left;
+  padding: 15px;
+  color: #27271F;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.about .desc h3{
+  text-align: left;
+}
+
+.about p{
+  display: block;
+  text-align: left;
+  padding: 15px;
+  color: #27271F;
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+.cassie{
+  display: block;
+  box-sizing: content-box;
+  background: silver;
+  border-radius: 10px;
+}
+
+.cassie img{
+  display: block;
+  align-content: center;
+  width: 30%;
+  height: 15%;
+}
+
+
+
+
+/*** SERVICES ***/
+.services  {
+  display: block;
+  background-size: cover;
+  padding: 20px;
+}
+
+.services h2{
+  display: block;
+  font-size: 4rem;
+  padding: 20px;
+}
+
+.services ul li a{
+  display: block;
+  font-size: 2rem;
+  padding: 20px;
+  color: #cc8800;
+  text-decoration: none;
+  line-height: normal;
 }
