@@ -1,6 +1,7 @@
 html {
   display: flex;
   font-size: 62.5%;
+  box-sizing: border-box ;
   /*padding: 5px;*/
   /*width: auto;*/
 }
@@ -332,4 +333,63 @@ display: block;
 .formaction  label{
   font-size: 2rem;
   
+}
+
+/*** BOOK APPOINMENT ***/
+.book{
+  display: block;
+  background-image: url(images/bookaptbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-right: 97px;
+  padding-bottom: 30px;
+  padding-left: 97px;
+}
+
+.book h2{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+}
+
+.book .bookappt-btn {
+  padding: 7px;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  background-color:#cc8800;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.book .data{
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  padding: 30px;
+  border-radius: 5px;
+  background: #cc8800;
+  opacity: 70%;
+  line-height: 200%;
+}
+
+.data label{
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.data input{
+  width: 100px;
+}
+
+.data button{
+  background: #b35900;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  align-items: center;
+  cursor: grab;
 }

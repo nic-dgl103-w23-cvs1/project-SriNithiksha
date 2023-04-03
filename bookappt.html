@@ -4,13 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- DGL 103 CVS1 - Sri Nithiksha - Project-->
-    <title>Home</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="about" href="about.html" />
-    <link rel="services" href="services.html" />
-    <link rel="contact" href="Contactus.html" />
-    <link rel="contact" href="bookappt.html" />
   </head>
   <body>
     <!--header-->
@@ -24,35 +19,39 @@
           <li><a href="About.html">About</a></li>
           <li><a href="Services.html">Services</a></li>
           <li><a href="Contactus.html">Contact Us</a></li>
-          <li><a href="bookappt.html" class="bookappt-btn">Book Appoinment</a></li>
+          <li>
+            <a href="bookappt.html" class="bookappt-btn">Book Appoinment</a>
+          </li>
         </ul>
         <a class="toggle" onclick="showNav()"> <i class="fa fa-bars"></i></a>
       </nav>
     </header>
-    <!--hero-->
-    <main class="hero">
-      <div class="bgimage"></div>
-      <div class="welcome">
-        <h1>Welcome</h1>
-        <h2>Bookkeeping You Can Count On</h2>
-        <p>Unique strategies, individual solutions, a personal touch.</p>
-        <a href="#" class="con">Contact Us</a>
+
+    <!--book appoinment-->
+    <main class="book">
+      <div>
+        <h2>Book Appoinment</h2>
+        <!--<a href="bookappt.html" class="bookappt-btn">Book Appoinment</a>-->
+        <div class="data">
+          <label for="fullname">Full Name</label>
+          <input type="text" name="fullname" id="fullname" />
+          <label for="phone-number">Phone-Number</label>
+          <input type="tel" name="phone-number" />
+          <label for="date">Date</label>
+          <input type="date" name="date" />
+          <label for="time">Time</label>
+          <input type="time" name="time" /><br>
+          <div class="bookappt">
+            <input type="submit" value="Book Appoinment">
+          </div>
+        </div>
       </div>
     </main>
-    <!--introduction-->
-    <section class="intro">
-      <h2>Welocme to F&C</h2>
-      <p>
-        Cassie and Felice came together as co-workers almost 2 years ago. From
-        there, they have worked for two different employers together where they
-        discovered that they worked well together and shared a common work ethic
-        and approach to providing excellent service to their employers/clients.
-        They decided that with their common interests and commitment to
-        accounting that they would make a fabulous team. They both strive for
-        outstanding customer service, focused on serving clientele, by catering
-        to clients needs.
-      </p>
-    </section>
+    <!--<section class="book">
+    <h2>Book Appoinment</h2>
+    <a href="bookappt.html" class="bookappt-btn">Book Appoinment</a>
+  </section>-->
+
     <!--footer-->
     <footer>
       <div class="footer-content">
