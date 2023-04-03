@@ -286,3 +286,50 @@ display: block;
   text-decoration: none;
   line-height: normal;
 }
+
+/*** CONTACT US ***/
+.contact{
+  display: block;
+  padding-right: 97px;
+  padding-bottom: 30px;
+  padding-left: 97px;
+}
+
+.contact h2{
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.contact h3{
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.form img{
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 8%;
+  height: 8%;
+}
+
+.form h2{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.formaction{
+  display: flex;
+  flex-direction: column;
+
+  flex-wrap: nowrap;
+  line-height: 20%;
+}
+
+.formaction  label{
+  font-size: 2rem;
+  
+}

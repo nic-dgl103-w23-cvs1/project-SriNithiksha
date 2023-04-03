@@ -1,33 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contactus</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <!--header-->
     <header>
-        <div class="logo">
-          <img src="images/logo.png" alt="logo" />
-        </div>
-        <nav>
-          <ul id="nav-items">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Services.html">Services</a></li>
-            <li><a href="Contactus.html">Contact Us</a></li>
-            <li><a href="#" class="bookappt-btn">Book Appoinment</a></li>
-          </ul>
-          <a class="toggle" onclick="showNav()"> <i class="fa fa-bars"></i></a>
-        </nav>
-      </header>
-      <!--contact us-->
-      <h2>Contact Us</h2>
-      <h3>We know that the accounting needs for each business or family are unique. Use our form to tell us more about your needs, and concerns.</h3>
-      <!--footer-->
+      <div class="logo">
+        <img src="images/logo.png" alt="logo" />
+      </div>
+      <nav>
+        <ul id="nav-items">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Contactus.html">Contact Us</a></li>
+          <li><a href="#" class="bookappt-btn">Book Appoinment</a></li>
+        </ul>
+        <a class="toggle" onclick="showNav()"> <i class="fa fa-bars"></i></a>
+      </nav>
+    </header>
+    <!--contact us-->
+    <div class="contact">
+    <h2>Contact Us</h2>
+    <h3>
+      We know that the accounting needs for each business or family are unique.
+      Use our form to tell us more about your needs, and concerns.
+    </h3>
+    <section class="form">
+    <img src="images/formlogo.png" alt="formlogo" />
+    <h2>Fill the Form</h2>
+    <div class="formaction">
+    <form action="/login" method="post">
+      <label for="fullname">Full Name</label><br>
+      <input type="text" name="fullname" id="fullname" />
+      <label>
+        Email ID
+        <input type="email" name="email-id" placeholder="name@domain.com" />
+      </label>
+      <label for="occupation">Occupation</label>
+      <input type="text" name="occupation" id="occupation" />
+
+      <label for="Services">Services</label>
+      <select name="services">
+        <option value="Dailybookkeepingtransactions" selected>
+          Daily bookkeeping transactions
+        </option>
+        <option value="Reconcilingofaccounts">Reconciling of accounts</option>
+        <option value="GSTPSTWCBandpayrollliabilitiesremittance">
+          GST, PST, WCB and payroll liabilities remittance
+        </option>
+        <option value="A/RandA/Preporting">A/R and A/P reporting</option>
+        <option value="Accountingsoftwaresetup">
+          Accounting software setup
+        </option>
+        <option value="Financialstatementpreparation">
+          Financial statement preparation
+        </option>
+        <option value="Billpayments">Bill payments</option>
+        <option value="Fullcycleaccountingservices">
+          Full cycle accounting services
+        </option>
+        <option value="T1personaltaxreturns">T1 personal tax returns</option>
+        <option value="Other">Other</option>
+      </select>
+      <textarea name="comment">Tell us more about your accounting needs</textarea>
+      <textarea name="comment">Any other concerns or special need you have</textarea>
+      <input type="file" name="file">
+      <button name="Send">
+        <strong>Send</strong>
+      </button>
+    </form>
+  </div>
+  </section>
+</div>
+    <!--footer-->
     <footer>
       <div class="footer-content">
         <h1>F&C Bookkeeping</h1>
@@ -48,5 +99,5 @@
         </div>
       </div>
     </section>
-</body>
+  </body>
 </html>
