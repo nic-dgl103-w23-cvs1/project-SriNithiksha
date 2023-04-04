@@ -27,55 +27,104 @@
     <!--contact us-->
     <div class="contact">
     <h2>Contact Us</h2>
-    <h3>
+    <h4>
       We know that the accounting needs for each business or family are unique.
       Use our form to tell us more about your needs, and concerns.
-    </h3>
+    </h4>
     <section class="form">
-    <img src="images/formlogo.png" alt="formlogo" />
-    <h2>Fill the Form</h2>
+    
+    
     <div class="formaction">
-    <form action="/login" method="post">
-      <label for="fullname">Full Name</label>
-      <input type="text" name="fullname" id="fullname" />
-      <label>
-        Email ID
-        <input type="email" name="email-id" placeholder="name@domain.com" />
-      </label>
-      <label for="occupation">Occupation</label>
-      <input type="text" name="occupation" id="occupation" />
-
-      <label for="Services">Services</label>
-      <select name="services">
-        <option value="Dailybookkeepingtransactions" selected>
-          Daily bookkeeping transactions
-        </option>
-        <option value="Reconcilingofaccounts">Reconciling of accounts</option>
-        <option value="GSTPSTWCBandpayrollliabilitiesremittance">
-          GST, PST, WCB and payroll liabilities remittance
-        </option>
-        <option value="A/RandA/Preporting">A/R and A/P reporting</option>
-        <option value="Accountingsoftwaresetup">
-          Accounting software setup
-        </option>
-        <option value="Financialstatementpreparation">
-          Financial statement preparation
-        </option>
-        <option value="Billpayments">Bill payments</option>
-        <option value="Fullcycleaccountingservices">
-          Full cycle accounting services
-        </option>
-        <option value="T1personaltaxreturns">T1 personal tax returns</option>
-        <option value="Other">Other</option>
-      </select>
-      <textarea name="comment">Tell us more about your accounting needs</textarea>
-      <textarea name="comment">Any other concerns or special need you have</textarea>
-      <input type="file" name="file">
-      <button name="Send">
-        <strong>Send</strong>
-      </button>
+      <form id="form">
+        <h3>Fill the Form</h3>
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+    
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+    
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email ID
+            </label>
+    
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+    
+        <div class="form-control">
+            <label for="occupation" id="label-occupation">
+                Occupation
+            </label>
+    
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="occupation"
+                   placeholder="Enter your Occupation" />
+        </div>
+    
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Services
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="services" id="services">
+                <option value="Dailybookkeepingtransactions" selected>
+                    Daily bookkeeping transactions
+                  </option>
+                  <option value="Reconcilingofaccounts">Reconciling of accounts</option>
+                  <option value="GSTPSTWCBandpayrollliabilitiesremittance">
+                    GST, PST, WCB and payroll liabilities remittance
+                  </option>
+                  <option value="A/RandA/Preporting">A/R and A/P reporting</option>
+                  <option value="Accountingsoftwaresetup">
+                    Accounting software setup
+                  </option>
+                  <option value="Financialstatementpreparation">
+                    Financial statement preparation
+                  </option>
+                  <option value="Billpayments">Bill payments</option>
+                  <option value="Fullcycleaccountingservices">
+                    Full cycle accounting services
+                  </option>
+                  <option value="T1personaltaxreturns">T1 personal tax returns</option>
+                  <option value="Other">Other</option>
+            </select>
+        </div>
+    
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+    
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Tell us more about your accounting needs">
+            </textarea>
+    
+            <textarea name="comment" 
+                placeholder="Any other concerns or special need you have">
+            </textarea>
+        </div>
+    
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
     </form>
+    
   </div>
+
   </section>
 </div>
     <!--footer-->

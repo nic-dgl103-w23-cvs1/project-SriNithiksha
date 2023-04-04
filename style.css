@@ -1,48 +1,47 @@
 html {
   display: flex;
   font-size: 62.5%;
-  box-sizing: border-box ;
-  /*padding: 5px;*/
-  /*width: auto;*/
+  font-family: 'Open Sans', sans-serif;
+
 }
 /** header of the page**/
 header {
   height: 100px;
-  background: #cc8800;
+  background: #CC8800;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 header ul {
   display: flex;
   list-style-type: none;
 }
 header ul li a {
   padding: 0 20px;
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 1.50rem;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .bookappt-btn {
   padding: 3px;
   border-radius: 2px;
-  color: #cc8800;
+  color: #CC8800;
   background-color: white;
   justify-content: center;
   align-items: center;
 }
 /** hero **/
+
 .hero {
-  display: block;
-  /*background: fixed;*/
-  background-image: url(images/background.png);
-  /*background-color: #986434;*/
+  display: flex;
   background-size: cover;
-  /*padding: 100px;*/
+  background-image: url(images/background.png);
 }
+
 main {
   display: flex;
   align-items: center;
@@ -74,7 +73,6 @@ main p {
   margin: 30px 0;
 }
 .con {
- 
   align-items: center;
   justify-content: center;
 }
@@ -95,38 +93,42 @@ main p {
   font-weight: bold;
   color: #986434;
 }
-.bgimage{
+.bgimage {
   display: inline-block;
   justify-content: right;
   width: 60%;
 }
 /**Intro**/
-.intro{
-  display: block;
-  padding: 20px;
-  height: 36%;
-  background-color: #f2e5d9;
+.intro {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-image: url(images/background.png);
 }
 
-.intro h2{
-  display: block;
-  font-size: 5rem;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: underline;
-}
-
-.intro p{
+.intro h2 {
   display: block;
   font-size: 3rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.intro p {
+  display: block;
+  background: #7A5409;
+  color: #fff;
+  opacity: 70%;
+  padding: 50px;
+  border-radius: 5px;
+  font-size: 2rem;
   text-align: justify;
-  padding: 28px;
   font-weight: lighter;
   text-decoration: none;
-
 }
 /** footer **/
-footer{
+footer {
   display: block;
   padding: 20px;
   background: #111;
@@ -134,7 +136,7 @@ footer{
   color: #cc8800;
 }
 
-.footer-content{
+.footer-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,13 +144,13 @@ footer{
   text-align: center;
 }
 
-.footer-content h1{
+.footer-content h1 {
   font-size: 5rem;
   font-weight: bold;
   line-height: 3rem;
 }
 
-.footer-content p{
+.footer-content p {
   margin: 10px auto;
   line-height: 28px;
   font-size: 14px;
@@ -156,130 +158,127 @@ footer{
 }
 
 /** footer bottom**/
-.footer-bottom{
-    display: block;
-    background: #3b3a37;
-    padding: 20px;
-    padding-bottom: 40px;
-    text-align: center;
+.footer-bottom {
+  display: block;
+  background: #3b3a37;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
 }
 
-.footer-bottom p{
-   float: left;
-   color: #cc8800;
-   font-size: 16px;
-   word-spacing: 2px;
-   text-transform: capitalize;
+.footer-bottom p {
+  float: left;
+  color: #cc8800;
+  font-size: 16px;
+  word-spacing: 2px;
+  text-transform: capitalize;
 }
 
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
 }
 
-.footer-menu{
+.footer-menu {
   float: right;
 }
 
-.footer-menu ul{
+.footer-menu ul {
   display: flex;
 }
 
-.footer-menu ul li{
-padding-right: 10px;
-display: block;
+.footer-menu ul li {
+  padding-right: 10px;
+  display: block;
 }
 
-.footer-menu ul li a{
+.footer-menu ul li a {
   color: #cc8800;
   font-size: 16px;
   text-decoration: none;
 }
 
 /*** ABOUT ***/
-.about{
+.about {
   display: flex;
   padding: 20px;
   box-sizing: border-box;
   background: #754f1a;
 }
 
-.about h2{
+.about h2 {
   display: block;
   text-align: left;
   padding: 15px;
-  color: #27271F;
+  color: #27271f;
   font-size: 4rem;
 }
 
-.felice{
+.felice {
   display: block;
   box-sizing: content-box;
   background: silver;
   border-radius: 10px;
 }
 
-.felice img{
+.felice img {
   display: block;
   align-content: center;
   width: 30%;
   height: 15%;
 }
 
-.about h3{
+.about h3 {
   display: block;
   text-align: left;
   padding: 15px;
-  color: #27271F;
+  color: #27271f;
   font-size: 2.5rem;
   text-align: center;
 }
 
-.about .desc h3{
+.about .desc h3 {
   text-align: left;
 }
 
-.about p{
+.about p {
   display: block;
   text-align: left;
   padding: 15px;
-  color: #27271F;
+  color: #27271f;
   font-size: 2.5rem;
   text-align: left;
 }
 
-.cassie{
+.cassie {
   display: block;
   box-sizing: content-box;
   background: silver;
   border-radius: 10px;
 }
 
-.cassie img{
+.cassie img {
   display: block;
   align-content: center;
   width: 30%;
   height: 15%;
 }
 
-
-
-
 /*** SERVICES ***/
-.services  {
+.services {
   display: block;
   background-size: cover;
   padding: 20px;
 }
 
-.services h2{
+.services h2 {
   display: block;
   font-size: 4rem;
   padding: 20px;
 }
 
-.services ul li a{
+.services ul li a {
   display: block;
   font-size: 2rem;
   padding: 20px;
@@ -289,54 +288,69 @@ display: block;
 }
 
 /*** CONTACT US ***/
-.contact{
-  display: block;
-  padding-right: 97px;
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #754f1a;
+  opacity: 80%;
+  /**padding-right: 97px;
   padding-bottom: 30px;
-  padding-left: 97px;
+  padding-left: 97px;**/
 }
 
-.contact h2{
+.contact h2 {
   font-size: 4rem;
   font-weight: bold;
 }
 
-.contact h3{
+.contact h4 {
   font-size: 2rem;
   font-weight: lighter;
+  margin-top: 2px;
 }
 
-.form img{
-  display: flex;
-  flex-wrap: nowrap;
-  align-content: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  width: 8%;
-  height: 8%;
+/* Styling the Form (Color, Padding, Shadow) */
+form {
+  background-color: #fff;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.form h2{
-  font-size: 2rem;
-  font-weight: bold;
+.form h3{
+  font-size: 1.8rem;
   text-align: center;
 }
 
-.formaction{
-  display: flex;
-  flex-direction: column;
-
-  flex-wrap: nowrap;
-  line-height: 20%;
+/* Styling form-control Class */
+.form-control {
+  text-align: left;
+  margin-bottom: 25px;
 }
 
-.formaction  label{
-  font-size: 2rem;
-  
+/* Styling form-control Label */
+.form-control label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Styling form-control input,
+      select, textarea */
+.form-control input,
+.form-control select,
+.form-control textarea {
+  border: 1px solid #777;
+  border-radius: 2px;
+  font-family: inherit;
+  padding: 10px;
+  display: block;
+  width: 95%;
 }
 
 /*** BOOK APPOINMENT ***/
-.book{
+.book {
   display: block;
   background-image: url(images/bookaptbg.png);
   background-size: cover;
@@ -346,7 +360,7 @@ display: block;
   padding-left: 97px;
 }
 
-.book h2{
+.book h2 {
   font-size: 2rem;
   font-weight: bold;
   text-align: left;
@@ -359,13 +373,13 @@ display: block;
   font-size: 1rem;
   font-weight: 700;
   color: white;
-  background-color:#cc8800;
+  background-color: #cc8800;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 }
 
-.book .data{
+.book .data {
   display: flex;
   flex-direction: column;
   flex-flow: column;
@@ -376,20 +390,11 @@ display: block;
   line-height: 200%;
 }
 
-.data label{
+.data label {
   font-size: 1.5rem;
   text-align: left;
 }
 
-.data input{
+.data input {
   width: 100px;
-}
-
-.data button{
-  background: #b35900;
-  color: white;
-  width: 100px;
-  border-radius: 5px;
-  align-items: center;
-  cursor: grab;
 }
