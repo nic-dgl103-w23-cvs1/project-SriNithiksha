@@ -3,6 +3,10 @@ html {
   font-size: 62.5%;
   font-family: "Open Sans", sans-serif;
 }
+
+.container{
+  display: block;
+}
 /** header of the page**/
 header {
   height: 100px;
@@ -14,7 +18,7 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-header .logo img{
+header .logo img {
   width: 220px;
 }
 header ul {
@@ -30,48 +34,43 @@ header ul li a {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.bookappt-btn {
-  padding: 3px;
-  border-radius: 2px;
-  color: #cc8800;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
+
+.show-items{
+  display: none;
 }
+
 /** hero **/
 
 .hero {
-  display: flex;
-  background-size: cover;
-}
-
-.video-container {
   position: relative;
-  height: 100vh;
+  height: 60vh;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  overflow: hidden;
+  height: 100%;
+  object-fit: cover;
 }
 
-.video-container video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
-}
-.video-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: black;
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 50px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.hero-content h1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 5rem;
+  color: #27271f;
+  padding-top: 50px;
+}
 
 /**Intro**/
 .intro {
@@ -171,7 +170,7 @@ footer {
   justify-content: space-between;
 }
 
-.contactus .holder{
+.contactus .holder {
   display: flex;
   flex-direction: column;
 }
@@ -221,7 +220,7 @@ footer {
 /** footer bottom**/
 .footer-bottom {
   display: block;
-  background: #3b3a37;
+  /*background: #3b3a37;*/
   padding: 20px;
   padding-bottom: 40px;
   text-align: center;
@@ -234,7 +233,6 @@ footer {
   word-spacing: 2px;
   text-transform: capitalize;
 }
-
 
 .footer-menu {
   float: right;
@@ -259,15 +257,6 @@ footer {
   background-color: #535350;
   color: #fff;
   font-weight: lighter;
-}
-
-.ref a {
-  color: white;
-  text-align: center;
-}
-
-.ref h5{
-  color: white;
   text-align: center;
 }
 
@@ -275,7 +264,7 @@ footer {
 .about {
   display: block;
   padding: 20px;
-  background: #754f1a;
+  background: #FFF2CC;
 } /*#754f1a;*/
 
 .about h2 {
@@ -290,7 +279,7 @@ footer {
 .about-desc {
   display: flex;
   flex-direction: row;
-  opacity: 80%;
+  opacity: 95%;
   margin-left: 5%;
   padding-bottom: 30px;
   padding-left: 25px;
@@ -332,8 +321,8 @@ footer {
   display: block;
   background: #754f1a;
   opacity: 90%;
-  border-bottom-left-radius: 18px;
-  border-top-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-top-right-radius: 18px;
 }
 
 .cassie img {
@@ -379,7 +368,7 @@ footer {
   font-size: 2rem;
   font-weight: bold;
   padding: 20px;
-  color: #cc8800;
+  color: whitesmoke;
   text-decoration: none;
   list-style-type: square;
   line-height: 2vh;
@@ -390,7 +379,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: #7a5409;
+  background: #FFF2CC;
 }
 
 .contact h2 {
@@ -497,4 +486,73 @@ form {
 
 .data input {
   width: 100px;
+}
+
+
+/* ----------- iPhone 12, 12 Pro ----------- */
+ 
+/* 2532x1170 pixels at 460ppi */ 
+@media only screen 
+and (device-width: 390px) 
+and (device-height: 844px) 
+and (-webkit-device-pixel-ratio: 3) { 
+  .container{
+    width: 200px;
+    height: auto;
+    background: blue;
+  }
+  /**header{
+    padding: 0 32px;
+    overflow: auto;
+  }
+  
+  header nav {
+    display: contents;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  .logo{
+    width: 30%;
+    float: left;
+  }
+
+  header nav{
+    float: right;
+    margin-top: 32px;
+  }
+
+  header nav .toggle {
+    display: none;
+  }
+
+  header nav ul {
+    display: contents;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav li {
+    padding-right: 8px;
+    display: inline-block;
+  }
+  
+
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+
+  header nav .toggle {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+  }**/
 }
