@@ -72,6 +72,7 @@ header ul li a {
   color: black;
 }
 
+
 /**Intro**/
 .intro {
   display: flex;
@@ -109,7 +110,6 @@ header ul li a {
 .card-content p {
   display: block;
   font-size: 2em;
-  
 }
 .intro h2 {
   font-size: 4rem;
@@ -163,17 +163,20 @@ footer {
 
 .contactus {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background: #535350;
   opacity: 80%;
   border-radius: 6px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  margin-left: 60%;
-  line-height: normal;
 }
 
-.contactus h3 {
+.contactus .holder{
+  display: flex;
+  flex-direction: column;
+}
+
+.holder h3 {
   font-size: 2rem;
   color: #fff;
   padding: 15px;
@@ -224,7 +227,7 @@ footer {
   text-align: center;
 }
 
-.footer-bottom p {
+.footer-bottom h3 {
   float: left;
   color: #cc8800;
   font-size: 16px;
@@ -232,11 +235,6 @@ footer {
   text-transform: capitalize;
 }
 
-.footer-bottom span {
-  text-transform: uppercase;
-  opacity: 0.4;
-  font-weight: 200;
-}
 
 .footer-menu {
   float: right;
@@ -257,6 +255,22 @@ footer {
   text-decoration: none;
 }
 
+.ref {
+  background-color: #535350;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.ref a {
+  color: white;
+  text-align: center;
+}
+
+.ref h5{
+  color: white;
+  text-align: center;
+}
+
 /*** ABOUT ***/
 .about {
   display: block;
@@ -268,7 +282,7 @@ footer {
   display: block;
   text-align: left;
   padding: 10px;
-  margin-left: 5%;
+  margin-left: 10%;
   color: #27271f;
   font-size: 4rem;
 }
@@ -276,17 +290,17 @@ footer {
 .about-desc {
   display: flex;
   flex-direction: row;
-  opacity: 70%;
+  opacity: 80%;
   margin-left: 5%;
   padding-bottom: 30px;
   padding-left: 25px;
   padding-right: 25px;
-
 }
 
 .felice {
   display: block;
-  background: silver;
+  background: #754f1a;
+  opacity: 90%;
   border-bottom-left-radius: 18px;
   border-top-left-radius: 18px;
   border-right: solid 1px black;
@@ -316,9 +330,10 @@ footer {
 
 .cassie {
   display: block;
-  background: silver;
-  border-top-right-radius: 18px;
-  border-bottom-right-radius: 18px;
+  background: #754f1a;
+  opacity: 90%;
+  border-bottom-left-radius: 18px;
+  border-top-left-radius: 18px;
 }
 
 .cassie img {
@@ -367,7 +382,6 @@ footer {
   color: #cc8800;
   text-decoration: none;
   list-style-type: square;
-  list-style: ;
   line-height: 2vh;
 }
 
@@ -380,14 +394,18 @@ footer {
 }
 
 .contact h2 {
+  display: block;
+  text-align: left;
+  padding: 10px;
+  margin-left: 10%;
+  color: #27271f;
   font-size: 4rem;
-  font-weight: bold;
 }
 
-.contact h4 {
+.contact p {
   font-size: 2rem;
-  font-weight: lighter;
-  margin-top: 2px;
+  font-weight: 400;
+  margin-left: 10%;
 }
 
 /* Styling the Form (Color, Padding, Shadow) */
@@ -452,7 +470,7 @@ form {
   color: white;
 }
 
-.data .bookappt input{
+.data .bookappt input {
   background-color: #27271f;
   color: white;
   font-size: 1rem;
