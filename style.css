@@ -64,11 +64,10 @@ header ul li a {
 }
 
 .hero-content h1{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: block;
+  text-align: center;
   font-size: 5rem;
-  color: #27271f;
+  color: whitesmoke;
   padding-top: 50px;
 }
 
@@ -84,13 +83,13 @@ header ul li a {
 
 .grid {
   display: grid;
-  width: 50em;
-  height: 70em;
+  width: 70em;
+  height: 50em;
   align-items: center;
-  margin-left: 11%;
+  margin-left: 6%;
 }
 .grid-item {
-  background-color: #7a5409;
+  background-color: #997950;
   border-radius: 0.4rem;
   overflow: hidden;
 
@@ -113,7 +112,7 @@ header ul li a {
 .intro h2 {
   font-size: 4rem;
   font-weight: bold;
-  margin-left: 10%;
+  margin-left: 6%;
   color: #27271f;
 }
 
