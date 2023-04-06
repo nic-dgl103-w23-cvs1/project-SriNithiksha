@@ -43,10 +43,9 @@ header .nav-items li a:hover {
   display: block;
 }
 
-.toggle{
+.toggle {
   display: none;
 }
-
 
 /** hero **/
 
@@ -515,54 +514,31 @@ form {
     height: auto;
   }
 
-  .logo {
+  .container .logo img {
     display: block;
-    align-items: start;
-    justify-content: left;
-    width: 5px;
-    height: auto;
-    padding: 0;
-  }
-
-  /**.nav-items {
-    display: flex;
-  }
-  .toggle {
-    display: block;
-    
-    width: 10px;
+    width: 100px;
     height: auto;
   }
 
-  .nav-items {
-    display: none;
-    width: 390px;
-    height: auto;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
-  .nav-items li a{
-    margin: 10px;
-    font-size: 2em;
-    color: #cc8800;
-  }**/
-  
-
-  
   /* Show the toggle button */
   .toggle {
     display: block;
     float: right;
-    margin-right: 10px;
   }
-  
+
+  header .nav-items{
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items:flex-start;
+    justify-content: left;
+    font-size: 2em;
+    gap: 1em;
+    
+  }
+
   /* Styles for the expanded nav menu */
-  
+
   /** hero section **/
   .hero {
     width: 390px;
@@ -617,7 +593,7 @@ form {
   .card-content a {
     font-size: 1.25em;
   }
-  
+
   footer {
     width: 390px;
     height: auto;
