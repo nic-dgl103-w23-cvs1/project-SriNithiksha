@@ -325,8 +325,9 @@ footer {
   font-size: 1.5rem;
   text-align: left;
 }
-.felice .desc p{
-  font-size: 1.5rem}
+.desc p{
+  font-size: 1.5rem
+}
 
 .cassie {
   display: block;
@@ -359,7 +360,7 @@ footer {
   text-align: left;
 }
 
-.cassie .desc p{
+.desc p{
   font-size: 1.5rem}
 
 /*** SERVICES ***/
@@ -543,7 +544,7 @@ form {
     gap: 1em;
   }
 
-  /* Styles for the expanded nav menu */
+  
 
   /** hero section **/
   .hero {
@@ -668,7 +669,7 @@ form {
 
   .about .about-desc {
     display: block;
-    width: 300px;
+    width: 350px;
     height: auto;
     margin: 0;
     padding-right: 50px;
@@ -686,23 +687,27 @@ form {
   }
 
   .about-desc .felice {
+    width: 300px;
     border-radius: 0;
     border-right: 0;
   }
 
   .felice img {
-    width: 150px;
-    padding: 50px;
+    width: 300px;
+    height: auto;
+    padding: 70px;
   }
 
   .about-desc .cassie {
+    width: 300px;
     border-radius: 0;
     border-right: 0;
   }
 
   .cassie img {
-    width: 150px;
-    padding: 50px;
+    width: 300px;
+    height: auto;
+    padding: 70px;
   }
 
   /** services page **/
