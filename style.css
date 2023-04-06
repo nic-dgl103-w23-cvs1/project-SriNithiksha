@@ -553,9 +553,6 @@ form {
   }**/
   
 
-  .nav-items, .toggle {
-    display: none;
-  }
   
   /* Show the toggle button */
   .toggle {
@@ -565,15 +562,7 @@ form {
   }
   
   /* Styles for the expanded nav menu */
-  .nav-items {
-    display: block;
-    margin-top: 10px;
-  }
   
-  .nav-items li {
-    display: block;
-    margin-bottom: 5px;
-  }
   /** hero section **/
   .hero {
     width: 390px;
