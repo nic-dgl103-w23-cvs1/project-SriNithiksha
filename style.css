@@ -1,5 +1,7 @@
+* {
+  box-sizing: border-box;
+}
 html {
-  display: block;
   font-size: 62.5%;
   font-family: "Open Sans", sans-serif;
 }
@@ -323,6 +325,8 @@ footer {
   font-size: 1.5rem;
   text-align: left;
 }
+.felice .desc p{
+  font-size: 1.5rem}
 
 .cassie {
   display: block;
@@ -354,6 +358,9 @@ footer {
   font-size: 1.5rem;
   text-align: left;
 }
+
+.cassie .desc p{
+  font-size: 1.5rem}
 
 /*** SERVICES ***/
 .services {
@@ -526,15 +533,14 @@ form {
     float: right;
   }
 
-  header .nav-items{
-    display: none;
+  header .nav-items {
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: left;
     font-size: 2em;
     gap: 1em;
-    
   }
 
   /* Styles for the expanded nav menu */
