@@ -37,7 +37,7 @@
         </div>
 
         <nav>
-          <ul id="nav-items">
+          <ul class="nav-items">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
@@ -146,9 +146,12 @@
       <!--javascript-->
       <script>
         function showNav() {
-          var element = document.getElementById("nav-items");
-          element.classList.toggle("show-items");
-        }
+  const nav = document.querySelector('.nav-items');
+  const toggle = document.querySelector('.toggle');
+
+  nav.classList.toggle('show');
+  toggle.classList.toggle('hide');
+}
       </script>
     </div>
   </body>

@@ -35,6 +35,10 @@ header ul li a {
   font-weight: bold;
 }
 
+.nav-items li a:hover{
+  color: #27271f;
+}
+
 .show-items{
   display: none;
 }
@@ -487,6 +491,11 @@ form {
   width: 100px;
 }
 
+.bookappt:hover{
+  color: #754f1a;
+  transition: 0.7s;
+}
+
 
 /** responsive screen **/
 @media screen and (max-width: 768px){ 
@@ -503,14 +512,45 @@ form {
   }
 
   .logo{
-    width: 100px;
+    display: block;
+    align-items: start;
+    justify-content: left;
+    width: 5px;
     height: auto;
+    padding: 0;
   }
 
-  .toggle{
-    visibility: visible;
+  .nav-items {
+    display: none;
+  }
+  .toggle {
+    display: block;
   }
 
+  .nav-items.show {
+    display: block;
+  }
+  .toggle.hide {
+    display: none;
+  }
+
+  .nav-items {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .nav-items li {
+    margin: 10px;
+    font-size: 2em;
+    color: #cc8800;
+  }
+
+  
   /** hero section **/
   .hero{
     width: 390px;
