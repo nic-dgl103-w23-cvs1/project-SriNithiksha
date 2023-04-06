@@ -645,6 +645,12 @@ form {
     width: 25px;
   }
 
+  .footer-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
   .footer-bottom h3 {
     font-size: 1em;
   }
