@@ -488,12 +488,8 @@ form {
 }
 
 
-/* ----------- iPhone 12, 12 Pro ----------- */
- 
-/* 2532x1170 pixels at 460ppi */ 
-@media only screen 
-and (device-width: 390px) 
-and (device-height: 844px){ 
+/** responsive screen **/
+@media screen and (max-width: 768px){ 
   /** Whole page **/
   .container{
     width: 390px;
