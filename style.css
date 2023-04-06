@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 html {
   font-size: 62.5%;
@@ -140,7 +141,8 @@ header .nav-items li a:hover {
 
 /** footer **/
 footer {
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   background-image: url(images/footer.png);
   background-repeat: no-repeat;
@@ -175,6 +177,7 @@ footer {
   background: #535350;
   opacity: 80%;
   border-radius: 6px;
+  margin-top: 13px;
   align-items: center;
   justify-content: space-between;
 }
@@ -228,7 +231,9 @@ footer {
 
 /** footer bottom**/
 .footer-bottom {
-  display: block;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
   /*background: #3b3a37;*/
   padding: 20px;
   padding-bottom: 40px;
