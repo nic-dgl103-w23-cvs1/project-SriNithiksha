@@ -495,63 +495,250 @@ form {
 and (device-width: 390px) 
 and (device-height: 844px) 
 and (-webkit-device-pixel-ratio: 3) { 
+  /** Whole page **/
   .container{
-    width: 200px;
+    width: 390px;
     height: auto;
-    background: blue;
-  }
-  /**header{
-    padding: 0 32px;
-    overflow: auto;
   }
   
-  header nav {
-    display: contents;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+  /** header **/
+  header{
+    width: 390px;
+    height: auto;
   }
 
   .logo{
-    width: 30%;
-    float: left;
+    width: 100px;
+    height: auto;
   }
 
-  header nav{
-    float: right;
-    margin-top: 32px;
+  .toggle{
+    visibility: visible;
   }
 
-  header nav .toggle {
-    display: none;
+  /** hero section **/
+  .hero{
+    width: 390px;
+    height: auto;
   }
 
-  header nav ul {
-    display: contents;
-    list-style: none;
-    margin: 0;
+  .video{
+    width: 390px;
+    height: auto;
+  }
+
+  .hero-content h1{
+    width: auto;
+    height: auto;
+    font-size: 3em;
+  }
+
+  /** intro section **/
+  .intro{
+    width: 390px;
+    height: auto;
+  }
+
+  .intro h2{
+    font-size: 3rem;
+  }
+
+  .grid{
+    width: 390px;
+    height: auto;
+  }
+  
+  .grid-item{
+    width: 330px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .card-content{
+    width: 280px;
+    height: auto;
+  }
+
+  .card-content h3{
+    font-size: 2em;
+  }
+
+  .card-content p{
+    font-size: 1.5em;
+  }
+
+  .card-content a{
+    font-size: 1.25em;
+
+  }
+
+  footer{
+    width: 390px;
+    height: auto;
     padding: 0;
   }
 
-  header nav li {
-    padding-right: 8px;
-    display: inline-block;
+  .footer-content h1{
+    font-size: 3em;
+  }
+
+  .footer-content .contactus{
+    width: 238px;
+    height: auto;
+  }
+
+  .footer-content .holder{
+    width: 115px;
+    height: auto;
+  }
+  .footer-content .holder h3{
+    font-size: 1.5em;
+  }
+
+  .footer-content .holder img{
+    width: 25px;
+  }
+
+  .footer-content .holder a{
+    font-size: 1em;
+  }
+
+  .footer-content h3{
+    font-size: 1.5em;
+  }
+
+  .footer-content img{
+    width: 25px;
+  }
+
+  
+
+  .footer-bottom h3{
+    font-size: 1em;
+  }
+
+
+
+  .footer-bottom .footer-menu ul li a{
+    font-size: 1em;
+    align-items: center;
+  }
+
+  .ref{
+    width: 390px;
+    height: auto;
+  }
+
+  /** about page **/
+  .about{
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: auto;
+    padding: 0;
+  }
+
+  .about h2{
+    font-size: 3em;
+  }
+
+  .about .about-desc{
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 6px;
+  }
+
+  .desc h3{
+    font-size: 2em;
+  }
+
+  .desc p{
+    font-size: 1.5em;
+    text-align: justify;
+  }
+
+  .about-desc .felice{
+    border-radius: 0;
+    border-right: 0;
+  }
+
+  .felice img{
+    width: 150px;
+    padding: 50px;
+  }
+
+  .about-desc .cassie{
+    border-radius: 0;
+    border-right: 0;
+  }
+
+  .cassie img{
+    width: 150px;
+    padding: 50px;
+  }
+
+  /** services page **/
+  .services{
+    display: flex;
+    width: 390px;
+    height: auto;
+    padding: 0;
+  }
+
+  .services h2{
+    font-size: 3em;
+  }
+
+  .services ul li a{
+    font-size: 1.5em;
+    line-height: normal
+  }
+
+  /** contact us page **/
+  .contact{
+    width: 390px;
+    height: auto;
+    padding: 0;
+  }
+
+  .contact h2{
+    font-size: 3em;
+    margin: 5%;
+  }
+
+  .contact p{
+    font-size: 1.5em;
+    text-align: justify;
+    margin: 5%;
+  }
+
+  .form{
+    width: 300px;
+    height: auto;
+    padding-left: 40px;
+  }
+  
+  /** Book Appoinment page **/
+  .book{
+    width: 390px;
+    height: auto;
+    padding: 0;
+  }
+
+  .book div{
+    display: block;
+    padding: 20px;
+  }
+
+  .book h2{
+    font-size: 2em;
+    margin-right: 30%;
+  }
   }
   
 
-  header nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 0.5rem;
-  }
-
-  header nav .toggle {
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.5rem;
-  }**/
-}
+  
