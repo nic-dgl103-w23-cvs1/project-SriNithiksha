@@ -4,7 +4,7 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
-.container{
+.container {
   display: block;
 }
 /** header of the page**/
@@ -35,13 +35,18 @@ header ul li a {
   font-weight: bold;
 }
 
-.nav-items li a:hover{
+header .nav-items li a:hover {
   color: #27271f;
 }
 
-.show-items{
+.show-items {
+  display: block;
+}
+
+.toggle{
   display: none;
 }
+
 
 /** hero **/
 
@@ -67,7 +72,7 @@ header ul li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.hero-content h1{
+.hero-content h1 {
   display: block;
   text-align: center;
   font-size: 5rem;
@@ -267,7 +272,7 @@ footer {
 .about {
   display: block;
   padding: 20px;
-  background: #FFF2CC;
+  background: #fff2cc;
 } /*#754f1a;*/
 
 .about h2 {
@@ -382,7 +387,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: #FFF2CC;
+  background: #fff2cc;
 }
 
 .contact h2 {
@@ -491,27 +496,26 @@ form {
   width: 100px;
 }
 
-.bookappt:hover{
+.bookappt:hover {
   color: #754f1a;
   transition: 0.7s;
 }
 
-
 /** responsive screen **/
-@media screen and (max-width: 768px){ 
+@media screen and (max-width: 768px) {
   /** Whole page **/
-  .container{
-    width: 390px;
-    height: auto;
-  }
-  
-  /** header **/
-  header{
+  .container {
     width: 390px;
     height: auto;
   }
 
-  .logo{
+  /** header **/
+  header {
+    width: 390px;
+    height: auto;
+  }
+
+  .logo {
     display: block;
     align-items: start;
     justify-content: left;
@@ -520,22 +524,20 @@ form {
     padding: 0;
   }
 
-  .nav-items {
-    display: none;
+  /**.nav-items {
+    display: flex;
   }
   .toggle {
     display: block;
-  }
-
-  .nav-items.show {
-    display: block;
-  }
-  .toggle.hide {
-    display: none;
+    
+    width: 10px;
+    height: auto;
   }
 
   .nav-items {
     display: none;
+    width: 390px;
+    height: auto;
     position: absolute;
     top: 60px;
     left: 0;
@@ -544,128 +546,144 @@ form {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     z-index: 1;
   }
-  .nav-items li {
+  .nav-items li a{
     margin: 10px;
     font-size: 2em;
     color: #cc8800;
-  }
-
+  }**/
   
+
+  .nav-items, .toggle {
+    display: none;
+  }
+  
+  /* Show the toggle button */
+  .toggle {
+    display: block;
+    float: right;
+    margin-right: 10px;
+  }
+  
+  /* Styles for the expanded nav menu */
+  .nav-items {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .nav-items li {
+    display: block;
+    margin-bottom: 5px;
+  }
   /** hero section **/
-  .hero{
+  .hero {
     width: 390px;
     height: auto;
   }
 
-  .video{
+  .video {
     width: 390px;
     height: auto;
   }
 
-  .hero-content h1{
+  .hero-content h1 {
     width: auto;
     height: auto;
     font-size: 3em;
   }
 
   /** intro section **/
-  .intro{
+  .intro {
     width: 390px;
     height: auto;
   }
 
-  .intro h2{
+  .intro h2 {
     font-size: 3rem;
   }
 
-  .grid{
+  .grid {
     width: 390px;
     height: auto;
   }
-  
-  .grid-item{
+
+  .grid-item {
     width: 330px;
     height: auto;
     padding: 10px;
   }
 
-  .card-content{
+  .card-content {
     width: 280px;
     height: auto;
   }
 
-  .card-content h3{
+  .card-content h3 {
     font-size: 2em;
   }
 
-  .card-content p{
+  .card-content p {
     font-size: 1.5em;
   }
 
-  .card-content a{
+  .card-content a {
     font-size: 1.25em;
-
   }
-
-  footer{
+  
+  footer {
     width: 390px;
     height: auto;
     padding: 0;
   }
 
-  .footer-content h1{
+  .footer-content h1 {
     font-size: 3em;
   }
 
-  .footer-content .contactus{
+  .footer-content .contactus {
     width: 238px;
     height: auto;
   }
 
-  .footer-content .holder{
+  .footer-content .holder {
     width: 115px;
     height: auto;
   }
-  .footer-content .holder h3{
+  .footer-content .holder h3 {
     font-size: 1.5em;
   }
 
-  .footer-content .holder img{
+  .footer-content .holder img {
     width: 25px;
   }
 
-  .footer-content .holder a{
+  .footer-content .holder a {
     font-size: 1em;
   }
 
-  .footer-content h3{
+  .footer-content h3 {
     font-size: 1.5em;
   }
 
-  .footer-content img{
+  .footer-content img {
     width: 25px;
   }
 
-  
-
-  .footer-bottom h3{
+  .footer-bottom h3 {
     font-size: 1em;
   }
 
-
-
-  .footer-bottom .footer-menu ul li a{
+  .footer-bottom .footer-menu ul li a {
     font-size: 1em;
     align-items: center;
   }
 
-  .ref{
+  .ref {
     width: 390px;
     height: auto;
   }
 
   /** about page **/
-  .about{
+  .about {
     display: flex;
     flex-direction: column;
     width: 390px;
@@ -673,11 +691,11 @@ form {
     padding: 0;
   }
 
-  .about h2{
+  .about h2 {
     font-size: 3em;
   }
 
-  .about .about-desc{
+  .about .about-desc {
     display: block;
     width: 300px;
     height: auto;
@@ -687,93 +705,90 @@ form {
     padding-bottom: 6px;
   }
 
-  .desc h3{
+  .desc h3 {
     font-size: 2em;
   }
 
-  .desc p{
+  .desc p {
     font-size: 1.5em;
     text-align: justify;
   }
 
-  .about-desc .felice{
+  .about-desc .felice {
     border-radius: 0;
     border-right: 0;
   }
 
-  .felice img{
+  .felice img {
     width: 150px;
     padding: 50px;
   }
 
-  .about-desc .cassie{
+  .about-desc .cassie {
     border-radius: 0;
     border-right: 0;
   }
 
-  .cassie img{
+  .cassie img {
     width: 150px;
     padding: 50px;
   }
 
   /** services page **/
-  .services{
+  .services {
     display: flex;
     width: 390px;
     height: auto;
     padding: 0;
   }
 
-  .services h2{
+  .services h2 {
     font-size: 3em;
   }
 
-  .services ul li a{
+  .services ul li a {
     font-size: 1.5em;
-    line-height: normal
+    line-height: normal;
   }
 
   /** contact us page **/
-  .contact{
+  .contact {
     width: 390px;
     height: auto;
     padding: 0;
   }
 
-  .contact h2{
+  .contact h2 {
     font-size: 3em;
     margin: 5%;
   }
 
-  .contact p{
+  .contact p {
     font-size: 1.5em;
     text-align: justify;
     margin: 5%;
   }
 
-  .form{
+  .form {
     width: 300px;
     height: auto;
     padding-left: 40px;
   }
-  
+
   /** Book Appoinment page **/
-  .book{
+  .book {
     width: 390px;
     height: auto;
     padding: 0;
   }
 
-  .book div{
+  .book div {
     display: block;
     padding: 20px;
   }
 
-  .book h2{
+  .book h2 {
     font-size: 2em;
     margin-right: 30%;
   }
-  }
-  
-
-  
+}
